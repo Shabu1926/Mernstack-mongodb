@@ -1,0 +1,19 @@
+to create a db:
+use secedb
+
+to insert one value with key
+db.sececollection.insert({name:"Maya",id:1,})
+
+to insert many value with key
+db.sececollection.insertMany([{name:"Ash",id:2},{name:"Sam", id:6}])
+
+to update one value with key
+db.sececollection.updateOne({name:"Maya"},{$set:{id:5}});
+
+to find a value
+db.sececollection.find()
+db.sececollection.find({"name":"Maya"});
+
+to delete one value with key
+db.sececollection.deleteOne({name:"Maya"});
+d
